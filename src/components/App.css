@@ -1,0 +1,96 @@
+*, *::before, *::after* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    display: flex;
+    height: 100vh;
+}
+
+.list-group {
+    margin: 0;
+    list-style: none;
+    padding: 15px;
+}
+
+.list-group-item {
+    margin-bottom: 10px;
+}
+
+.list-group-item-wrap {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid #359740;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.list-group-item-wrap .material-icons {
+    color: #359740;
+    font-size: 30px;
+    transition: all 0.3s;
+}
+
+.list-group-item-wrap.active {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.list-group-item-wrap:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.item-info span {
+    display: block;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+}
+
+.btn-group .btn {
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    border: 1px solid #359740;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-group .btn i {
+    color: #359740;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.btn-group .btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.btn-group .btn:hover {
+    background-color: #359740;
+    color: #ffffff;
+}
+
+.btn-group .btn:hover i {
+    color: #ffffff;
+}
+
+.btn-group .btn.disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.5;
+}
+

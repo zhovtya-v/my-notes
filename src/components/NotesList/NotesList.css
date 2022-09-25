@@ -1,0 +1,19 @@
+.notes-wrap {
+    margin-top: 60px;
+    width: calc(100% - 300px);
+}
+
+.notes-wrap {
+    display: flex;
+}
+
+.notes-wrap .list-group {
+    width: 300px;
+    flex-shrink: 0;
+    background-color: #40b34d;
+}
+
+.note-content {
+    flex-grow: 1;
+    background: rgba(53, 151, 64, 0.08);
+}

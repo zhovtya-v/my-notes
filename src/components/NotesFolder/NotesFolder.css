@@ -1,0 +1,11 @@
+.active {
+    background-color: aqua;
+}
+
+.folders-wrap {
+    margin-top: 60px;
+    max-width: 300px;
+    width: 100%;
+    flex-shrink: 0;
+    background-color: #359740;
+}
